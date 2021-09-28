@@ -21,9 +21,9 @@
       :sliderPositionPercentage="sliderPosition"
     />
 
-    <br>
+    <br />
 
-    <vue-typer class="headline" :repeat="0" text="Eldin Zaimovic"></vue-typer>
+    <vue-typer class="headline" :repeat="0" text="TETEREOU Aboudourazakou"></vue-typer>
     <vue-typer
       :text="text1"
       :repeat="Infinity"
@@ -37,7 +37,7 @@
       :erase-on-complete="false"
       caret-animation="smooth"
     ></vue-typer>
-    <br>
+    <br />
     <v-flex xs12 sm6 md4 lg4 xl4>
       <v-card flat color="transparent" max-width="500">
         <v-card-title primary-title>
@@ -48,13 +48,22 @@
             </h3>
             <div>
               <p>
-                Hello! I’m Eldin Zaimovic. I'm a front-end developer who
-                is passionate about
+                Hello ,I'm TETEREOU Aboudourazakou,I'm computer sciences engineer student.I'm full -stack Developer.I'm passionate about
                 <span
                   class="green--text font-weight-bold"
-                >VUE</span>, building great user experiences,
-                fighting for simplicity over complexity and constantly learning.
-                When I'm not coding or making videos, you'll find me traveling across Europe.
+                >JAVA</span>,
+                <span class="green--text font-weight-bold">PHP</span>,
+                <span class="green--text font-weight-bold">Javascript</span> and
+                <span class="green--text font-weight-bold">C++</span> as programming languages.
+                Regarding frameworks, I am particularly interested
+                <span
+                  class="red--text font-weight-bold"
+                >Spring MVC</span>,
+                <span class="red--text font-weight-bold">LARAVEL PHP</span>,
+                <span class="red--text font-weight-bold">VUEJS(Vuetify,NuxtJs,BootstrapVue)</span>,
+                <span class="red--text font-weight-bold">Flutter</span> and
+                <span class="red--text font-weight-bold">Bootstrap Css</span>. With each framework I have already done my personal projects where some source codes are available on github.
+                With these technologies, I managed to carry out about fifteen freelance projects or just for fun. To know more about these projects, there is a special link regarding my projects.Although coding is my hobby, I am also interested in Sport, strolling, movies.I also like to talking with my friends about technologies in order to be up to date with new technologies.
               </p>
             </div>
           </div>
@@ -98,6 +107,7 @@
 <script>
 import { VueTyper } from "vue-typer";
 import VueCompareImage from "vue-compare-image";
+import axios from "axios";
 
 export default {
   metaInfo: {
@@ -105,17 +115,20 @@ export default {
     titleTemplate: "%s ← Eldin's Space",
     meta: [
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { name: "description", content: "Eldin Zaimovic's Portfolio" },
+      { name: "description", content: "TETEREOU Aboudourazakou's Portfolio" },
       { charset: "utf-8" },
-      { property: "og:title", content: "Eldin' Space" },
-      { property: "og:site_name", content: "Eldin' Space" },
+      { property: "og:title", content: "TETEREOU Aboudourazakou" },
+      { property: "og:site_name", content: "TETEREOU Aboudourazakou" },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "https://eldin.space" },
+      { property: "og:url", content: "https://tetereou-aboudourazakou.com" },
       {
         property: "og:image",
         content: "https://i.imgur.com/Dcz2PGx.jpg"
       },
-      { property: "og:description", content: "Eldin Zaimovic's Portfolio" }
+      {
+        property: "og:description",
+        content: "TETEREOU Aboudourazakou's Portfolio"
+      }
     ]
   },
   components: {
@@ -124,37 +137,49 @@ export default {
   },
   data() {
     return {
+      user: {
+        nom: "Tetereou"
+      },
       icons: [
-        { href: "https://github.com/EldinZaimovic", icon: "fab fa-github" },
+        { href: "https://github.com/Aboudourazakou", icon: "fab fa-github" },
         {
-          href: "https://stackoverflow.com/users/story/9660700",
+          href:
+            "https://stackoverflow.com/users/13389594/tetereou-mouhammad-abdourazak",
           icon: "fab fa-stack-overflow"
         },
-        { href: "https://twitter.com/EldinMatricar", icon: "fab fa-twitter" },
+        { href: "https://twitter.com/AboudourazakouT", icon: "fab fa-twitter" },
         {
-          href: "https://www.linkedin.com/in/eldin-zaimovic",
+          href:
+            "https://www.linkedin.com/in/aboudourazakou-tetereou-2189b2159/",
           icon: "fab fa-linkedin-in"
         },
+
         {
-          href: "https://www.xing.com/profile/Eldin_Zaimovic?sc_o=mxb_p",
-          icon: "fab fa-xing"
-        },
-        {
-          href: "https://www.facebook.com/EldinVasVoli",
+          href: "https://www.facebook.com/tetereou.abdourazak",
           icon: "fab fa-facebook-f"
         },
-        { href: "https://www.instagram.com/matricar", icon: "fab fa-instagram" }
+        {
+          href: "https://www.instagram.com/ing_abdourazak/",
+          icon: "fab fa-instagram"
+        }
       ],
-      text1: ["Front-End Developer", "Web Developer", "Web Designer"],
+      text1: [
+        "Full stack developper",
+        "Desktop developper",
+        "Mobile developper",
+        "Engineer student"
+      ],
       leftImage: "https://i.imgur.com/bU50uS9.jpg",
-      rightImage: "https://i.imgur.com/z3ZoEEw.jpg",
-      leftImage2: "https://i.imgur.com/SXBitjh.jpg",
-      rightImage2: "https://i.imgur.com/Dcz2PGx.jpg",
+      rightImage: "essai.png",
+      leftImage2: "tetereou-blanche.png",
+      rightImage2: "tetereou-original.png",
       sliderLine: 0,
       hSize: 0,
       sliderPosition: 0.5
     };
-  }
+  },
+
+
 };
 </script>
 <style>

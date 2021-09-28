@@ -11,9 +11,15 @@ export default new Router({
   base: process.env.BASE_URL,
   routes: [{
       path: "/",
-      name: "home",
+      name: "Home",
       component: Home
     },
+    {
+      path: "/Home",
+      name: "Home",
+      component: Home
+    },
+
     {
       path: "/contact",
       name: "contact",
@@ -45,8 +51,8 @@ export default new Router({
         import( /* webpackChunkName: "about" */ "./views/Services.vue")
     },
     {
-      path: "/portfolio",
-      name: "portfolio",
+      path: "/projects",
+      name: "projects",
       component: () =>
         import( /* webpackChunkName: "about" */ "./views/Portfolio/Portfolio.vue")
     },
